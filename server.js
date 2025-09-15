@@ -48,7 +48,7 @@ app.post("/users", async (req, res) => {
 
 });
 
-// Modifier un user
+// Modifier un user (plus tard : vérifier que l'user existe avec un db.get)
 app.put("/user/:id", async (req, res) => {
 
     const { name, email } = req.body;
